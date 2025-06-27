@@ -21,6 +21,8 @@ Kulüpler: Kendi topluluğunu oluştur
 
 Mağaza: Günlük teklifleri kaçırma
 
+Kupa Yolu: Çalışıyor Ödüller
+
 Ve çok daha fazlası!
 
 
@@ -38,7 +40,7 @@ Blaze Brawl V15 Nasıl Açılır Oynanır?
 3. Telefon üzerinden çalıştırmak istersen Pydroid 3 uygulamasını indir
 
 
-4. Sunucu klasöründeki core.py dosyasını Pydroid'de aç
+4. Sunucu klasöründeki main.py dosyasını Pydroid'de aç
 
 
 5. "Çalıştır" (run ▶️) butonuna tıkla
