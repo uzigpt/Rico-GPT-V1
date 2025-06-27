@@ -1,22 +1,65 @@
-# SHBS V29
-Server ZIP:https://www.mediafire.com/file/wcazxai2uppgl8e/SHBS-V29.zip/file
 
-# Requirements:
-1. a brain...
+🔥 Blaze Brawl V15 – Yeni Nesil Brawl Deneyimi!
 
-# Working:
-1. Friend (add, status, remove)
-2. Club
-3. Shop
-4. Online Rooms
-5. bot interacting with the server
-6. Brawl Pass
-and more
+🎮 Sunucu Dosyası (ZIP):
+📥 Blaze Brawl V15 Server İndir
 
-# How to play SHBS V29:
-1. download client
-2. download server
-3. download pydroid (if you want to run from the phone)
-4. open in pydroid core.py located in the server folder
-5. click on the run button
-6. now open the game and play
+
+---
+
+✅ Gereksinimler:
+
+Sadece bir beyin ve biraz merak 😉
+
+
+
+---
+
+🚀 Öne Çıkan Özellikler:
+
+👥 Arkadaş Sistemi: Ekle, durumlarını gör, kaldır
+
+🏆 Kulüpler: Kendi topluluğunu oluştur
+
+🛍️ Mağaza: Günlük teklifleri kaçırma
+
+🌐 Online Odalar: Gerçek zamanlı çok oyunculu
+
+🤖 Bot Desteği: Botlar ile etkileşimli oynanış
+
+🎫 Brawl Pass: Ödüllerle dolu sezon sistemi
+
+🔧 Ve çok daha fazlası!
+
+
+
+---
+
+🕹️ Blaze Brawl V15 Nasıl Oynanır?
+
+1. Client dosyasını indir
+
+
+2. Sunucu dosyasını indir ([ZIP dosyası yukarıda])
+
+
+3. Telefon üzerinden çalıştırmak istersen Pydroid 3 uygulamasını indir
+
+
+4. Sunucu klasöründeki core.py dosyasını Pydroid'de aç
+
+
+5. "Çalıştır" (run ▶️) butonuna tıkla
+
+
+6. Artık oyunu aç ve kendi sunucunda Blaze Brawl’un keyfini çıkar!
+
+
+
+
+---
+
+💬 Blaze Brawl V15, Brawl Stars benzeri özel bir sunucu deneyimidir. Kendi arkadaş grubunla veya topluluğunla eğlenmek, yeni içerikleri test etmek ve nostalji yaşamak isteyenler için ideal bir sürümdür.
+
+İstersen isme özel logo veya yükleme ekranı da hazırlayabilirim. Yardımcı olmamı ister misin?
+
