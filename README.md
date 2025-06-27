@@ -1,7 +1,7 @@
 
 🔥 Blaze Brawl V15 – Yeni Nesil Brawl Deneyimi!
 
-🎮 Sunucu Dosyası (ZIP):
+Sunucu Dosyası (ZIP):
 📥 Blaze Brawl V15 Server İndir
 
 
@@ -27,7 +27,7 @@ Ve çok daha fazlası!
 
 ---
 
-🕹️ Blaze Brawl V15 Nasıl Açılır Oynanır?
+Blaze Brawl V15 Nasıl Açılır Oynanır?
 
 1. Client dosyasını indir
 
@@ -51,7 +51,5 @@ Ve çok daha fazlası!
 
 ---
 
-💬 Blaze Brawl V15, Brawl Stars benzeri özel bir sunucu deneyimidir. Kendi arkadaş grubunla veya topluluğunla eğlenmek, yeni içerikleri test etmek ve nostalji yaşamak isteyenler için ideal bir sürümdür.
-
-İstersen isme özel logo veya yükleme ekranı da hazırlayabilirim. Yardımcı olmamı ister misin?
+Blaze Brawl V15, Brawl Stars benzeri özel bir sunucu deneyimidir. Kendi arkadaş grubunla veya topluluğunla eğlenmek, yeni içerikleri test etmek ve nostalji yaşamak isteyenler için ideal bir sürümdür.
 
