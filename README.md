@@ -17,25 +17,17 @@ Sadece bir beyin ve biraz merak 😉
 
 🚀 Öne Çıkan Özellikler:
 
-👥 Arkadaş Sistemi: Ekle, durumlarını gör, kaldır
+Kulüpler: Kendi topluluğunu oluştur
 
-🏆 Kulüpler: Kendi topluluğunu oluştur
+Mağaza: Günlük teklifleri kaçırma
 
-🛍️ Mağaza: Günlük teklifleri kaçırma
-
-🌐 Online Odalar: Gerçek zamanlı çok oyunculu
-
-🤖 Bot Desteği: Botlar ile etkileşimli oynanış
-
-🎫 Brawl Pass: Ödüllerle dolu sezon sistemi
-
-🔧 Ve çok daha fazlası!
+Ve çok daha fazlası!
 
 
 
 ---
 
-🕹️ Blaze Brawl V15 Nasıl Oynanır?
+🕹️ Blaze Brawl V15 Nasıl Açılır Oynanır?
 
 1. Client dosyasını indir
 
