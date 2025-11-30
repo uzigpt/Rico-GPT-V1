@@ -19,5 +19,6 @@ and more
 3. create api and dont share people
 4. there is api.txt in the API folder write your API in it
 5. open main.py and write the bot token there
-6. run main.py
-7. write to bot
+6. install python-telegram-bot module
+7. run main.py
+8. write bot
