@@ -9,7 +9,7 @@ Server ZIP:
 1. talking
 2. writing code
 3. helping
-4. everyone languages know
+4. ricogpt all languages know
 
 and more
 
