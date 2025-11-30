@@ -1,57 +1,23 @@
+RicoGPT BOT!
 
-🔥 Blaze Brawl V15 – Yeni Nesil Brawl Deneyimi!
+Server ZIP:
 
-Sunucu Dosyası (ZIP):
-📥 Blaze Brawl V15 Server İndir
+## Requirements: ##
+1. a brain
 
+## Working: ##
+1. talking
+2. writing code
+3. helping
+4. everyone languages know
 
----
+and more
 
-✅ Gereksinimler:
-
-Sadece bir beyin ve biraz merak 😉
-
-
-
----
-
-🚀 Öne Çıkan Özellikler:
-
-Kulüpler: Kendi topluluğunu oluştur
-
-Mağaza: Günlük teklifleri kaçırma
-
-Kupa Yolu: Çalışıyor Ödüller
-
-Ve çok daha fazlası!
-
-
-
----
-
-Blaze Brawl V15 Nasıl Açılır Oynanır?
-
-1. Client dosyasını indir
-
-
-2. Sunucu dosyasını indir ([ZIP dosyası yukarıda])
-
-
-3. Telefon üzerinden çalıştırmak istersen Pydroid 3 uygulamasını indir
-
-
-4. Sunucu klasöründeki main.py dosyasını Pydroid'de aç
-
-
-5. "Çalıştır" (run ▶️) butonuna tıkla
-
-
-6. Artık oyunu aç ve kendi sunucunda Blaze Brawl’un keyfini çıkar!
-
-
-
-
----
-
-Blaze Brawl V15, Brawl Stars benzeri özel bir sunucu deneyimidir. Kendi arkadaş grubunla veya topluluğunla eğlenmek, yeni içerikleri test etmek ve nostalji yaşamak isteyenler için ideal bir sürümdür.
-
+## How to work RicoGPT: ##
+1. download server
+2. platform.openai.com register
+3. create api and dont share people
+4. there is api.txt in the API folder write your API in it
+5. open main.py and write the bot token there
+6. run main.py
+7. write to bot
