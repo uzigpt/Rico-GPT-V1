@@ -5,70 +5,78 @@ from telegram import InputFile
 from io import BytesIO
 import asyncio
 from Core.Connection import connect_to_uzi_ai
+
 asyncio.run(connect_to_uzi_ai())
 
-BOT_TOKEN = "YOUR_BOT_TOKEN_WRITE"
+BOT_TOKEN = "8587132735:AAH4dWVp4PjWBxx9ujJ1zbe63B2_VFemmSU"
 
+OPENAI_API_KEY = None
 def load_api_key():
+    global OPENAI_API_KEY
     try:
         with open("API/api.txt", "r") as f:
-            return f.read().strip()
+            OPENAI_API_KEY = f.read().strip()
     except FileNotFoundError:
         print("❌ API/api.txt bulunamadı!")
-        return None
 
-def generate_image(prompt):
-    url = "https://api.openai.com/v1/images/generations"
-    headers = {"Authorization": f"Bearer {OPENAI_API_KEY}"}
-    data = {"model": "gpt-image-1", "prompt": prompt, "size": "1024x1024"}
+
+load_api_key()
+
+
+def chat_with_ai(prompt):
+    url = "https://api.openai.com/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "model": "gpt-4o-mini",
+        "messages": [
+            {"role": "system", "content": "Sen RicoGPT adında Türkçe konuşan samimi bir asistansın."},
+            {"role": "user", "content": prompt}
+        ]
+    }
+
     try:
         r = requests.post(url, json=data, headers=headers)
         res = r.json()
-        if "data" in res:
-            if "b64_json" in res["data"][0]:
-                img_bytes = base64.b64decode(res["data"][0]["b64_json"])
-                return BytesIO(img_bytes)
-            elif "url" in res["data"][0]:
-                img_data = requests.get(res["data"][0]["url"]).content
-                return BytesIO(img_data)
-        print("Image yanıtı beklenmedik formatta:", res)
-        return None
+        return res["choices"][0]["message"]["content"]
     except Exception as e:
-        print("Image hatası:", e)
-        if "billing_hard_limit" in str(e) or "limit" in str(e):
-            return "LIMIT_ERROR"
-        return None
+        print("Chat hatası:", e)
+        return "Şu anda cevap veremiyorum"
 
-# ----- Bot komutları -----
+
+# -------- TELEGRAM --------
 async def start(update, context):
-    await update.message.reply_text("Selam! Ben RicoGPT 🤖\nSadece fotoğraf üretebilirim!")
+    await update.message.reply_text(
+        "🤖 **RicoGPT buradayım!**\n\n"
+        "Benimle sohbet edebilirsin 💬\n"
+        "Artık Konuşuyorum "
+    )
+
 
 async def mesaj(update, context):
     await update.message.chat.send_action("typing")
+
     try:
-        user_msg = update.message.text.lower()
-        if "video" in user_msg:
-            await update.message.reply_text("Video üretilme özelliği yoktur! Yakın zamanda gelecektir!")
-        elif "fotoğraf" in user_msg or "resim" in user_msg:
-            image = generate_image(user_msg)
-            if image == "LIMIT_ERROR":
-                await update.message.reply_text("Fotoğraf API limiti dolmuş! Lütfen daha sonra deneyin.")
-            elif image:
-                await update.message.reply_photo(photo=InputFile(image, filename="image.png"))
-            else:
-                await update.message.reply_text("Fotoğraf oluşturulamadı. Promptu detaylandırmayı deneyin.")
-        else:
-            await update.message.reply_text("Fotoğraf istemek için 'fotoğraf' veya 'resim' yazınız.")
+        user_msg = update.message.text
+        cevap = chat_with_ai(user_msg)
+        await update.message.reply_text(cevap)
+
     except Exception as e:
-        print("Mesaj işleme hatası:", e)
-        await update.message.reply_text("Hata oldu, API anahtarını veya servisi kontrol et.")
+        print("Mesaj hatası:", e)
+        await update.message.reply_text("Bir hata oluştu")
+
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
+
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(MessageHandler(filters.ALL, mesaj))
-    print("RicoGPT AÇILDI! By Uzi!")
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, mesaj))
+
+    print("✅ RicoGPT AÇILDI! By Uzi")
     app.run_polling()
+
 
 if __name__ == "__main__":
     main()
