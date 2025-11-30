@@ -7,7 +7,7 @@ import asyncio
 from Core.Connection import connect_to_uzi_ai
 asyncio.run(connect_to_uzi_ai())
 
-BOT_TOKEN = "8367415304:AAHH8LC07H7yqBszmRiRYtLAhl3HS_YxS4g"
+BOT_TOKEN = "YOUR_BOT_TOKEN_WRITE"
 
 def load_api_key():
     try:
