@@ -8,7 +8,7 @@ from Core.Connection import connect_to_uzi_ai
 
 asyncio.run(connect_to_uzi_ai())
 
-BOT_TOKEN = "8587132735:AAH4dWVp4PjWBxx9ujJ1zbe63B2_VFemmSU"
+BOT_TOKEN = "BOT_TOKEN_HERE"
 
 OPENAI_API_KEY = None
 def load_api_key():
